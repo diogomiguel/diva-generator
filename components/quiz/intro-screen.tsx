@@ -9,7 +9,7 @@ interface IntroScreenProps {
 
 export function IntroScreen({ onStart }: IntroScreenProps) {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-4 py-6 relative overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+    <div className="min-h-screen flex flex-col items-center justify-start pt-4 px-4 relative overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
       {/* Rainbow decorative background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-pink-500/15 rounded-full blur-3xl" />
@@ -22,10 +22,11 @@ export function IntroScreen({ onStart }: IntroScreenProps) {
       <div className="relative z-10 flex flex-col items-center text-center max-w-2xl">
         {/* Luke's SVG portrait */}
         <div className="mb-4 relative w-32 h-32 md:w-40 md:h-40 filter brightness-110">
+          <div className="absolute inset-0 bg-gradient-to-b from-pink-500/20 via-purple-500/20 to-transparent rounded-full blur-2xl" />
           <img
             src="/luke.svg"
             alt="Luke's portrait"
-            className="w-full h-full object-contain bg-transparent"
+            className="w-full h-full object-contain bg-transparent relative"
           />
           <Sparkles className="w-6 h-6 text-pink-400 absolute -top-2 -right-2 animate-bounce" />
         </div>
