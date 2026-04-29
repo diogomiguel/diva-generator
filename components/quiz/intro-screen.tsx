@@ -9,7 +9,7 @@ interface IntroScreenProps {
 
 export function IntroScreen({ onStart }: IntroScreenProps) {
   return (
-    <div className="h-dvh flex flex-col items-center justify-center px-4 py-0 relative overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+    <div className="h-dvh flex flex-col items-center justify-center px-4 py-0 relative overflow-y-auto bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
       {/* Rainbow decorative background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-pink-500/15 rounded-full blur-3xl" />
