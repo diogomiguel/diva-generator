@@ -9,13 +9,30 @@ interface IntroScreenProps {
 
 export function IntroScreen({ onStart }: IntroScreenProps) {
   return (
-    <div className="min-h-dvh flex flex-col items-center justify-center px-4 py-0 relative overflow-y-auto bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+    <div className="min-h-dvh flex flex-col items-center justify-center px-4 py-0 relative bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
       {/* Rainbow decorative background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-pink-500/15 rounded-full blur-3xl" />
         <div className="absolute top-1/3 right-0 w-72 h-72 bg-blue-500/15 rounded-full blur-3xl" />
         <div className="absolute bottom-0 left-0 w-80 h-80 bg-purple-500/15 rounded-full blur-3xl" />
         <div className="absolute bottom-1/3 right-1/4 w-64 h-64 bg-green-500/10 rounded-full blur-3xl" />
+      </div>
+
+      {/* Floating sparkles */}
+      <div className="absolute top-20 right-1/4 z-5 pointer-events-none">
+        <Sparkles className="w-5 h-5 text-pink-400/70 animate-bounce" style={{ animationDelay: '0s' }} />
+      </div>
+      <div className="absolute top-1/3 left-1/6 z-5 pointer-events-none">
+        <Sparkles className="w-4 h-4 text-blue-400/70 animate-bounce" style={{ animationDelay: '0.3s' }} />
+      </div>
+      <div className="absolute bottom-1/4 right-1/5 z-5 pointer-events-none">
+        <Sparkles className="w-5 h-5 text-purple-400/70 animate-bounce" style={{ animationDelay: '0.6s' }} />
+      </div>
+      <div className="absolute top-1/2 right-0 z-5 pointer-events-none">
+        <Sparkles className="w-4 h-4 text-green-400/70 animate-bounce" style={{ animationDelay: '0.2s' }} />
+      </div>
+      <div className="absolute bottom-1/3 left-0 z-5 pointer-events-none">
+        <Sparkles className="w-4 h-4 text-pink-400/60 animate-bounce" style={{ animationDelay: '0.5s' }} />
       </div>
 
       {/* Main content */}

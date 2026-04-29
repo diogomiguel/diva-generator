@@ -47,7 +47,7 @@ export function ResultScreen({ title, description, onRetake }: ResultScreenProps
     }
   };
   return (
-    <div className="min-h-dvh flex flex-col items-center justify-center px-4 py-8 relative overflow-y-auto bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+    <div className="min-h-dvh flex flex-col items-center justify-center px-4 py-8 relative bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
       {/* Rainbow decorative background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-pink-500/15 rounded-full blur-3xl animate-pulse" />
@@ -57,13 +57,13 @@ export function ResultScreen({ title, description, onRetake }: ResultScreenProps
       </div>
 
       {/* Confetti-like sparkles */}
-      <div className="absolute top-10 left-1/4">
+      <div className="absolute top-1/3 left-1/4 z-20 pointer-events-none">
         <Sparkles className="w-6 h-6 text-pink-400/60 animate-bounce" style={{ animationDelay: '0.2s' }} />
       </div>
-      <div className="absolute top-20 right-1/3">
+      <div className="absolute top-1/2 right-1/4 z-20 pointer-events-none">
         <Sparkles className="w-4 h-4 text-blue-400/60 animate-bounce" style={{ animationDelay: '0.5s' }} />
       </div>
-      <div className="absolute bottom-40 left-1/5">
+      <div className="absolute bottom-20 left-1/6 z-20 pointer-events-none">
         <Sparkles className="w-5 h-5 text-purple-400/60 animate-bounce" style={{ animationDelay: '0.8s' }} />
       </div>
 
@@ -72,7 +72,7 @@ export function ResultScreen({ title, description, onRetake }: ResultScreenProps
         {/* Your result label */}
         <div className="flex items-center gap-2 mb-6">
           <Crown className="w-5 h-5 text-pink-400" />
-          <span className="text-sm uppercase tracking-widest bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text text-transparent font-bold font-[family-name:var(--font-cinzel)]">
+          <span className="text-lg uppercase tracking-widest bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text text-transparent font-bold font-[family-name:var(--font-cinzel)]">
             Your Medieval Diva Is
           </span>
           <Crown className="w-5 h-5 text-purple-400" />
