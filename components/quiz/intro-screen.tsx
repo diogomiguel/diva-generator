@@ -27,6 +27,7 @@ export function IntroScreen({ onStart }: IntroScreenProps) {
             src="/luke.svg"
             alt="Luke's portrait"
             className="w-full h-full object-contain bg-transparent relative"
+            style={{ filter: "drop-shadow(0 0 6px #ec4899)" }}
           />
           <Sparkles className="w-6 h-6 text-pink-400 absolute -top-2 -right-2 animate-bounce" />
         </div>
