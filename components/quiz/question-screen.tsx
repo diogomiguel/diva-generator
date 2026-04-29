@@ -22,7 +22,7 @@ export function QuestionScreen({
   const progress = (currentQuestion / totalQuestions) * 100;
 
   return (
-    <div className="min-h-screen flex flex-col px-4 py-8 md:py-12 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 relative overflow-hidden">
+    <div className="h-dvh flex flex-col px-4 py-4 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 relative overflow-hidden">
       {/* Rainbow decorative background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-pink-500/10 rounded-full blur-3xl" />
@@ -57,7 +57,7 @@ export function QuestionScreen({
         <Card className="max-w-2xl w-full bg-slate-800/80 border-purple-500/50 backdrop-blur-sm shadow-2xl shadow-purple-500/20">
           <CardContent className="p-4 md:p-10">
             {/* Question text */}
-            <h2 className="text-2xl md:text-3xl font-bold text-center mb-10 font-[family-name:var(--font-cinzel)] text-balance leading-relaxed bg-gradient-to-r from-pink-300 via-purple-300 to-blue-300 bg-clip-text text-transparent">
+            <h2 className="text-2xl md:text-3xl font-bold text-center mb-6 font-[family-name:var(--font-cinzel)] text-balance leading-relaxed bg-gradient-to-r from-pink-300 via-purple-300 to-blue-300 bg-clip-text text-transparent">
               {question}
             </h2>
 

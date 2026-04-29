@@ -21,7 +21,7 @@ export function IntroScreen({ onStart }: IntroScreenProps) {
       {/* Main content */}
       <div className="relative z-10 flex flex-col items-center text-center max-w-2xl">
         {/* Luke's SVG portrait */}
-        <div className="mb-4 relative w-32 h-32 md:w-40 md:h-40 filter brightness-110">
+        <div className="mb-5 relative w-32 h-32 md:w-40 md:h-40 filter brightness-110">
           <div className="absolute inset-0 bg-gradient-to-b from-pink-500/20 via-purple-500/20 to-transparent rounded-full blur-2xl" />
           <img
             src="/luke.svg"
@@ -33,7 +33,7 @@ export function IntroScreen({ onStart }: IntroScreenProps) {
         </div>
 
         {/* Main headline */}
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-3 font-[family-name:var(--font-cinzel)] text-balance">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 font-[family-name:var(--font-cinzel)] text-balance">
           <span className="bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text text-transparent">Who is Your</span>
           <br />
           <span className="bg-gradient-to-r from-green-300 via-pink-400 to-orange-400 bg-clip-text text-transparent">
@@ -42,15 +42,15 @@ export function IntroScreen({ onStart }: IntroScreenProps) {
         </h1>
 
         {/* Subtitle with Luke reference */}
-        <p className="text-lg md:text-xl text-purple-200 mb-2 max-w-lg leading-relaxed">
+        <p className="text-lg md:text-xl text-purple-200 mb-3 max-w-lg leading-relaxed">
           Embark on a fabulous journey to discover your legendary medieval persona and unlock your inner diva energy!
         </p>
-        <p className="text-sm md:text-base text-pink-300 mb-5 max-w-lg leading-relaxed italic">
+        <p className="text-sm md:text-base text-pink-300 mb-6 max-w-lg leading-relaxed italic">
           Inspired by the legendary Luke—the ultimate medieval diva they are.
         </p>
 
         {/* Decorative divider */}
-        <div className="flex items-center gap-4 mb-5">
+        <div className="flex items-center gap-4 mb-6">
           <div className="h-px w-16 bg-gradient-to-r from-transparent via-pink-500 to-purple-500" />
           <Sparkles className="w-4 h-4 text-blue-400 animate-spin" />
           <div className="h-px w-16 bg-gradient-to-l from-transparent via-blue-500 to-green-500" />
@@ -67,7 +67,7 @@ export function IntroScreen({ onStart }: IntroScreenProps) {
         </Button>
 
         {/* Footer text */}
-        <p className="mt-4 text-sm text-pink-300/80 italic">
+        <p className="mt-5 text-sm text-pink-300/80 italic">
           ✨ Created for Luke's fabulous birthday • 10 questions • Infinite diva energy ✨
         </p>
       </div>
