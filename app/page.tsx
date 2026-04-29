@@ -97,7 +97,7 @@ export default function QuizPage() {
 
   if (isLoading) {
     return (
-      <main className="min-h-dvh bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center">
+      <main className="max-h-dvh overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center">
         <div className="text-center">
           <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-pink-500 mx-auto mb-4"></div>
           <p className="text-purple-200">Loading your diva destiny...</p>
