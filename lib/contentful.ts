@@ -20,12 +20,12 @@ export async function getQuizData() {
   try {
     const questionsRes = await contentfulClient.getEntries({
       content_type: 'quizQuestion',
-      order: 'sys.createdAt',
+      order: ['sys.createdAt'],
     });
 
     const resultsRes = await contentfulClient.getEntries({
       content_type: 'resultArchetype',
-      order: 'fields.order',
+      order: ['fields.order'],
     });
 
     const questions: QuizQuestion[] = questionsRes.items.map((item: any) => ({
