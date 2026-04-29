@@ -33,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-slate-900">
-      <body className={`${cinzel.variable} ${crimsonText.variable} font-serif antialiased h-dvh overflow-y-auto overscroll-behavior-y-contain bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900`}>
+      <body className={`${cinzel.variable} ${crimsonText.variable} font-serif antialiased relative h-dvh overflow-y-auto overscroll-behavior-y-contain bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900`}>
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
