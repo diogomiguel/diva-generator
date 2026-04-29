@@ -1,0 +1,12 @@
+<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Crown shape -->
+  <path d="M 6 18 L 8 10 L 12 14 L 16 8 L 20 14 L 24 10 L 26 18 Z" fill="#ec4899" stroke="#a855f7" stroke-width="1"/>
+  <!-- Crown band -->
+  <rect x="5" y="18" width="22" height="4" rx="1" fill="#ec4899"/>
+  <!-- Sparkles -->
+  <circle cx="10" cy="6" r="1.5" fill="#fbbf24"/>
+  <circle cx="22" cy="6" r="1.5" fill="#fbbf24"/>
+  <circle cx="16" cy="2" r="1" fill="#0ea5e9"/>
+  <!-- Gem at top -->
+  <circle cx="16" cy="8" r="2" fill="#0ea5e9" stroke="#ec4899" stroke-width="0.5"/>
+</svg>
