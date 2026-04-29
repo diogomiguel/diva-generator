@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   description: 'Discover your inner medieval diva with this playful quiz',
   generator: 'v0.app',
   icons: {
-    icon: '/icon.svg',
+    icon: '/favicon.ico',
     apple: '/icon.svg',
   },
 }
