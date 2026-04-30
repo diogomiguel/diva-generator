@@ -7,7 +7,7 @@ import { ResultScreen } from "@/components/quiz/result-screen";
 import { defaultQuestions, defaultResults } from "@/lib/defaultQuizData";
 
 // Quiz data with archetype mapping
-// 0=Radiant, 1=Mermaiden, 2=Enchanted, 3=Celestial, 4=Evil, 5=Party, 6=Royal
+// 0=Radiant, 1=Mermaiden, 2=Enchanted, 3=Celestial, 4=Evil, 5=Party, 6=Royal, 7=Servant, 8=Harlot
 
 interface QuizQuestion {
   question: string;
@@ -75,8 +75,8 @@ export default function QuizPage() {
   };
 
   const calculateResult = () => {
-    // Count votes for each archetype (0-6)
-    const votes = [0, 0, 0, 0, 0, 0, 0];
+    // Count votes for each archetype (0-8)
+    const votes = [0, 0, 0, 0, 0, 0, 0, 0, 0];
     answers.forEach((answerIndex, questionIndex) => {
       const archetypeIndex = questions[questionIndex].archetypes[answerIndex];
       votes[archetypeIndex]++;
@@ -85,7 +85,7 @@ export default function QuizPage() {
     // Find the archetype with the most votes
     let resultIndex = 0;
     let maxVotes = votes[0];
-    for (let i = 1; i < 7; i++) {
+    for (let i = 1; i < 9; i++) {
       if (votes[i] > maxVotes) {
         maxVotes = votes[i];
         resultIndex = i;

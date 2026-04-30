@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Cinzel, Crimson_Text } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
@@ -24,6 +24,12 @@ export const metadata: Metadata = {
     icon: '/favicon.ico',
     apple: '/icon.svg',
   },
+}
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  userScalable: false,
 }
 
 export default function RootLayout({

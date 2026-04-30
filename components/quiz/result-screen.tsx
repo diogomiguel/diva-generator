@@ -23,6 +23,8 @@ export function ResultScreen({ title, description, onRetake }: ResultScreenProps
     if (titleLower.includes("evil")) return "/results/evil.svg";
     if (titleLower.includes("party")) return "/results/party.svg";
     if (titleLower.includes("royal")) return "/results/royal.svg";
+    if (titleLower.includes("servant")) return "/results/servant.svg";
+    if (titleLower.includes("harlot")) return "/results/harlot.svg";
     return "/results/radiant.svg";
   };
 
